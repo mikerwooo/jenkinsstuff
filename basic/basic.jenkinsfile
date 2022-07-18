@@ -1,0 +1,17 @@
+// Basic Pipeline calling scm and agent information from jenkins.
+pipeline {
+    agent {
+        label 'agent2'
+    }
+    stages {
+        stage('Setup'){
+            checkout scm
+        } //setup stage
+        stage('build'){
+            sh 'echo hello world'
+        }
+    } //Stages
+} // Pipeline
+
+
+
