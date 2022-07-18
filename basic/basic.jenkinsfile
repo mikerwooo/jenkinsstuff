@@ -6,12 +6,12 @@ pipeline {
     stages {
         stage('Setup'){
             checkout scm
-        } //setup stage
+        } //Setup stage
         stage('build'){
             sh 'echo hello world'
-        }
+        } //Build stage
     } //Stages
-} // Pipeline
+} //Pipeline
 
 
 
